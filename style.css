@@ -6,3 +6,15 @@ body{
 *{
     color: white;
 }
+
+.container-fluid{
+    padding-bottom: 80px;
+}
+
+.first-div{
+    background-color: blue;
+}
+
+.second-div{
+    background-color: green;
+}
