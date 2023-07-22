@@ -7,14 +7,16 @@ body{
     color: white;
 }
 
-.container-fluid{
-    padding-bottom: 80px;
+#hero{
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/352/153/desktop-wallpaper-nice-backgrounds-extra-nice-background-pic-thumbnail.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
 }
 
-.first-div{
-    background-color: blue;
-}
-
-.second-div{
-    background-color: green;
+#tasks{
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/620/881/desktop-wallpaper-nice-backgrounds-%C2%B7%E2%91%A0-nice-background-pic.jpg");
+    min-height: 50vh;
+    background-position: center;
+    background-size: cover;
 }
