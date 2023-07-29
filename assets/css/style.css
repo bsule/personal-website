@@ -4,16 +4,46 @@
     src: url("../fonts/SourceSans3-VariableFont_wght.ttf");
 }
 
+@font-face {
+    font-family: RobotoMono;
+    src: url("../fonts/RobotoMono-VariableFont_wght.ttf");
+}
+
 body{
-    background: url("../img/Piggment-construction mile.png");
+    background: #161613;
 }
 
 *{
-    font-family: sourcesans3, sans-serif;
+    font-family: RobotoMono, sans-serif;
 }
 
+::selection{
+    background: #a4a3a3;
+}
+
+/* navbar */
+.navbar{
+    position: absolute;
+    width: 100%;
+}
+
+.navbar-nav{
+    margin-top: 40px;
+}
+
+.nav-link{
+    color: white;
+    font-size: 18px;
+}
+
+#projects-nav-link{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* landing page */
 #hero{
-    background: linear-gradient(rgba(0,0,0,0.37),rgba(0,0,0,0.37)), url("../img/IMG-0698.jpg") fixed center;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../img/IMG-0698.jpg") fixed center;
     min-height: 100vh;
     background-size: cover;
 }
@@ -31,10 +61,34 @@ body{
     font-weight: 800;
 }
 
-.main-text h2{
+.main-text h5{
     font-weight: 400;
 }
 
+#last-line::after{
+    margin-left: 3px;
+    content: "";
+    width: 4px;
+    height: 17px;
+    line-height: 4px;
+    background: white;
+    display: inline-block;
+    -webkit-animation: blink 1.1s infinite;
+}
+
+@-webkit-keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* about me */
 #about-me{
     min-height: 100vh;
 }
