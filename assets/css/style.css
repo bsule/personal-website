@@ -1,22 +1,49 @@
 
+@font-face {
+    font-family: sourcesans3;
+    src: url("../fonts/SourceSans3-VariableFont_wght.ttf");
+}
+
 body{
-    background-color: #000;
+    background: url("../img/Piggment-construction mile.png");
 }
 
 *{
-    color: white;
+    font-family: sourcesans3, sans-serif;
 }
 
 #hero{
-    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/352/153/desktop-wallpaper-nice-backgrounds-extra-nice-background-pic-thumbnail.jpg");
+    background: linear-gradient(rgba(0,0,0,0.37),rgba(0,0,0,0.37)), url("../img/IMG-0698.jpg") fixed center;
     min-height: 100vh;
-    background-position: center;
     background-size: cover;
 }
 
-#tasks{
-    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/620/881/desktop-wallpaper-nice-backgrounds-%C2%B7%E2%91%A0-nice-background-pic.jpg");
-    min-height: 50vh;
-    background-position: center;
-    background-size: cover;
+.main-text{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-text h1{
+    font-weight: 800;
+}
+
+.main-text h2{
+    font-weight: 400;
+}
+
+#about-me{
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 991px){
+    .main-text h1{
+        font-size: 100px;
+    }
+    .main-text h2{
+        font-size: 60px;
+    }
 }
