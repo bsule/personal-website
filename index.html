@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-sm">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,25 @@
     <section id="about-me">
         <div class="container">
             <div class="row">
+                <div class="about-me-text">
+                    <h1 data-aos="fade-in" data-aos-delay="200" data-aos-duration="500">About Me</h1>
+                    <p data-aos="fade-in" data-aos-delay="300" data-aos-duration="500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis dignissimos dolor dolorem explicabo, itaque iusto, magni maxime minima obcaecati, officiis quam quisquam rem tempore ullam? Officia repellendus reprehenderit tempore?</p>
+                </div>
 
+                <div class="about-me-pics">
+                    <figure>
+                        <img  data-aos="fade-in" data-aos-delay="400" data-aos-duration="500" src="assets/img/turkeypic.jpg" height="303" width="403"/>
+                        <figcaption data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">Istanbul, Turkey</figcaption>
+                    </figure>
+                    <figure id="soccer-pic">
+                        <img data-aos="fade-in" data-aos-delay="600" data-aos-duration="500" src="assets/img/soccerpic.JPG" height="303" width="403"/>
+                        <figcaption data-aos="fade-in" data-aos-delay="700" data-aos-duration="500">Bullhead City, Arizona</figcaption>
+                    </figure>
+                    <figure>
+                        <img data-aos="fade-in" data-aos-delay="800" data-aos-duration="500" src="assets/img/sangorgpic.jpg" height="303" width="403"/>
+                        <figcaption data-aos="fade-in" data-aos-delay="900" data-aos-duration="500">Mount San Gorgonio, California</figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </section>
@@ -62,7 +80,10 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            once: true,
+        });
+
     </script>
 </body>
 </html>
