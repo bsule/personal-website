@@ -14,11 +14,12 @@ html{
 }
 
 body{
-    background: #161613;
+    background: #062b3b;
 }
 
 *{
     font-family: RobotoMono, sans-serif;
+    box-sizing: border-box;
 }
 
 ::selection{
@@ -96,7 +97,7 @@ body{
 /* about me */
 #about-me{
     color: white;
-    min-height: 100vh;
+    min-height: 63vh;
 }
 
 .about-me-text{
@@ -120,6 +121,64 @@ body{
     margin-right: 20px;
 }
 
+/* projects */
+#projects{
+    min-height: 100vh;
+}
+
+.title-projects{
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.workout-tracker{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.workout-text{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.workout-pic-div{
+    display: flex;
+    justify-content: center;
+}
+
+#btn-learn-more{
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    width: 30%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tictactoe-website{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+}
+
+.tictactoe-text{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tictactoe-pic-div{
+    display: flex;
+    justify-content: center;
+}
+
 /* mobile */
 @media screen and (max-width: 991px){
     .main-text h1{
@@ -133,5 +192,9 @@ body{
 @media screen and (max-width: 1280px){
     .about-me-pics{
         flex-direction: column;
+    }
+    #soccer-pic{
+        margin-left: 0;
+        margin-right: 0;
     }
 }
