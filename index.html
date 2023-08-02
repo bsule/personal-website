@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <link href="assets/css/style.css" rel="stylesheet"/>
 </head>
@@ -21,7 +22,7 @@
                         <a class="nav-link" href="#about-me" data-aos="fade-in" data-aos-delay="100">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="projects-nav-link" href="#" data-aos="fade-in" data-aos-delay="200">Projects</a>
+                        <a class="nav-link" id="projects-nav-link" href="#projects" data-aos="fade-in" data-aos-delay="200">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-aos="fade-in" data-aos-delay="300">Contact</a>
@@ -56,16 +57,16 @@
 
                 <div class="about-me-pics">
                     <figure>
-                        <img  data-aos="fade-up" data-aos-delay="400" data-aos-duration="500" src="assets/img/turkeypic.jpg" height="303" width="403"/>
-                        <figcaption data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">Istanbul, Turkey</figcaption>
+                        <img src="assets/img/turkeypic.jpg" height="303" width="403"/>
+                        <figcaption>Istanbul, Turkey</figcaption>
                     </figure>
                     <figure id="soccer-pic">
-                        <img data-aos="fade-up" data-aos-delay="600" data-aos-duration="500" src="assets/img/soccerpic.JPG" height="303" width="403"/>
-                        <figcaption data-aos="fade-up" data-aos-delay="700" data-aos-duration="500">Bullhead City, Arizona</figcaption>
+                        <img src="assets/img/soccerpic.JPG" height="303" width="403"/>
+                        <figcaption>Bullhead City, Arizona</figcaption>
                     </figure>
                     <figure>
-                        <img data-aos="fade-up" data-aos-delay="800" data-aos-duration="500" src="assets/img/sangorgpic.jpg" height="303" width="403"/>
-                        <figcaption data-aos="fade-up" data-aos-delay="900" data-aos-duration="500">Mount San Gorgonio, California</figcaption>
+                        <img src="assets/img/sangorgpic.jpg" height="303" width="403"/>
+                        <figcaption>Mount San Gorgonio, California</figcaption>
                     </figure>
                 </div>
             </div>
@@ -87,20 +88,41 @@
                         <a href="https://github.com/bsule/Workout-Tracker" target="_blank"><button class="btn btn-outline-light" id="btn-learn-more">Learn More</button></a>
                     </div>
                     <div class="col workout-pic-div">
-                        <img src="assets/img/workout-tracker-pic.png" height="309" width="460"/>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="assets/img/workout-tracker-pic.png" alt="" height="309" width="460"></div>
+                                <div class="swiper-slide"><img src="assets/img/tictactoe-pic.png" alt="" height="309" width="460"></div>
+                                <div class="swiper-slide"><img src="assets/img/turkeypic.jpg" alt="" height="309" width="460"></div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="tictactoe-website">
                     <div class="col tictactoe-pic-div">
-                        <img src="assets/img/tictactoe-pic.png" height="309" width="460"/>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="assets/img/workout-tracker-pic.png" alt="" height="309" width="460"></div>
+                                <div class="swiper-slide"><img src="assets/img/tictactoe-pic.png" alt="" height="309" width="460"></div>
+                                <div class="swiper-slide"><img src="assets/img/turkeypic.jpg" alt="" height="309" width="460"></div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
                     </div>
                     <div class="col tictactoe-text">
                         <h4>TicTacToe</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda consectetur consequuntur deserunt doloremque eum id incidunt iure magnam maiores nam neque numquam placeat quas ratione reprehenderit saepe sed, voluptas!</p>
                         <a href="https://github.com/bsule/TicTacToeWebsite" target="_blank"><button class="btn btn-outline-light" id="btn-learn-more">Learn More</button></a>
                     </div>
-
                 </div>
 
 
@@ -111,11 +133,31 @@
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/aos.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script>
         AOS.init({
             once: true,
             offset: 10,
         });
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
     </script>
 </body>
 </html>

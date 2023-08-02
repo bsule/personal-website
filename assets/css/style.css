@@ -179,7 +179,24 @@ body{
     justify-content: center;
 }
 
-/* mobile */
+.swiper{
+    width: 460px;
+    height: fit-content;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: white;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+}
+
+/* ! mobile */
 @media screen and (max-width: 991px){
     .main-text h1{
         font-size: 100px;
