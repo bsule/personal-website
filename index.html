@@ -160,9 +160,49 @@
     </section>
 
 
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-section-title">
+                    <h1>Send me a Message!</h1>
+                    <!-- TODO email, linkedin, github, ?  -->
+                </div>
+                <div class="contact-form"> <!-- https://html.form.guide/email-form/html-email-form/ -->
+                    <form action="mailto:bilal.suleiman@gmail.com" method="GET">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="name" class="form-control" id="name-form" required>
+
+                        <label for="email" class="form-label" id="email-name">Email:</label>
+                        <input type="email" class="form-control" id="email-form" required>
+
+                        <label for="textarea" class="form-label" id="message-name">Message:</label>
+                        <textarea id="text-form" class="form-control"></textarea>
+
+                        <input type="submit" class="btn btn-outline-light" id="send-form-btn" value="Send">
+                    </form>
+                </div>
+                <p id="border-line-contact"></p>
+
+                <div class="contact-buttons">
+                    <p>&copy; Bilal Suleiman</p>
+                
+                    <div class="left-side-contact">
+                        <a href="mailto: bilal.suleiman@gmail.com" target="_blank"><i class="fa-solid fa-envelope" id="email-btn"></i></a>
+
+                        <a href="https://github.com/bsule" target="_blank"><i class="fab fa-brands fa-github" id="github-btn"></i></a>
+
+                        <a href="https://www.linkedin.com/in/bilal-suleiman-a1aa741b9/" target="_blank"><i class="fab fa-linkedin-in" id="linkedin-btn"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
 
     <script>
         AOS.init({

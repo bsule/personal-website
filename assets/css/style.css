@@ -97,7 +97,7 @@ body{
 /* ! about me */
 #about-me{
     color: white;
-    min-height: 63vh;
+    min-height: 70vh;
 }
 
 .about-me-text{
@@ -106,7 +106,7 @@ body{
 }
 
 .about-me-text p{
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .about-me-pics{
@@ -186,6 +186,72 @@ body{
 .swiper-pagination-bullet-active {
     background-color: white !important;
 }
+
+/* ! contact page */
+#contact{
+    min-height: 80vh;
+    color: white;
+}
+
+.contact-section-title{
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+#email-name, #message-name, #send-form-btn{
+    margin-top: 18px;
+}
+
+.form-control{
+    width: 60vh;
+}
+
+#text-form{
+    min-height: 20vh;
+    resize: none;
+}
+
+#send-form-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#border-line-contact{
+    margin-top: 70px;
+    border: 1px solid white;
+}
+
+.contact-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+#github-btn{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#linkedin-btn, #github-btn, #email-btn{
+    color: white;
+    font-size: 25px;
+}
+
+#linkedin-btn:hover, #github-btn:hover, #email-btn:hover{
+    color: #777676;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
 
 /* ! mobile */
 @media screen and (max-width: 991px){
