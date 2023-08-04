@@ -42,6 +42,16 @@ body{
     font-size: 18px;
 }
 
+.nav-link:hover{
+    color: black;
+    transition: 1s;
+    transition-delay: 0ms;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
 #projects-nav-link{
     margin-left: 20px;
     margin-right: 20px;
@@ -99,6 +109,7 @@ body{
 #about-me{
     color: black;
     min-height: 70vh;
+    margin-bottom: 100px;
 }
 
 .about-me-text{
@@ -120,8 +131,9 @@ body{
 
 #btn-contactme{
     margin-top: 10px;
-    width: 140px;
-    height: 40px;
+    width: 180px;
+    height: 45px;
+    font-weight: bold;
 }
 
 .about-me-pics{
@@ -182,11 +194,11 @@ body{
 .btn-primary:hover{
     position: relative;
     top:-2px;
-    transition: .1s;
-    -webkit-transition: .1s;
-    -moz-transition: .1s;
-    -ms-transition: .1s;
-    -o-transition: .1s;
+    transition: all .1s linear 0s;
+    -webkit-transition: all .1s linear 0s;
+    -moz-transition: all .1s linear 0s;
+    -ms-transition: all .1s linear 0s;
+    -o-transition: all .1s linear 0s;
 }
 
 #btn-learn-more{
@@ -206,6 +218,10 @@ body{
 .paragraph-project-text{
     margin-top: 20px;
     margin-bottom: 35px;
+}
+
+#jj-website-div, #tictactoe-div{
+    margin-top: 100px;
 }
 
 .swiper{
@@ -237,13 +253,31 @@ body{
     color: black !important;
 }
 
-.emails{
+.emails {
+    text-align: center;
+    margin-bottom: 70px;
     margin-top: 80px;
-    margin-bottom: 50px;
+}
+
+.emails h3 {
+    margin-top: 20px; /* Adjust the margin as needed */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.emails a{
+    display: block;
+    margin: 10px auto; /* Adjust the margin as needed */
+    max-width: 250px; /* Set a maximum width for the links */
     text-align: center;
 }
 
+#school-email{
+    margin-top: 10px;
+    max-width: 200px;
+}
+
 .emails h3{
+    display: block;
     margin-bottom: 20px;
 }
 
@@ -286,22 +320,79 @@ body{
 }
 
 
-/* ! mobile */
-@media screen and (max-width: 991px){
-    .main-text h1{
+/* @media screen and (max-width: 414px){
+
+    .navbar-nav{
+        margin-top: 100px;
+    }
+
+    .nav-link{
         font-size: 100px;
+    }
+
+    .main-text h1{
+        font-size: 90px;
     }
     .main-text h2{
         font-size: 60px;
     }
+} */
+
+@media screen and (max-width: 455px){
+    .nav-link{
+        font-size: 14px;
+    }
 }
 
-@media screen and (max-width: 1280px){
-    .about-me-pics{
-        flex-direction: column;
+@media screen and (max-width: 380px){ 
+    .main-text h1{
+        font-size: 30px;
+    }
+    .main-text h5{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    /* ! about me */
+    #about-me{
+        margin-top: 60px;
     }
     #soccer-pic{
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .about-me-pics img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* ! projects */
+    .project-div{
+        flex-direction: column;
+    }
+
+    #jj-website-div{
+        flex-direction: column-reverse;
+    }
+
+    .project-text{
+        margin-bottom: 100px;
+    }
+
+    #workouttracker-div, #jj-website-div{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .project-div{
+        margin-bottom: 200px;
+    }
+    .about-me-pics{
+        flex-direction: column;
+        align-self: center;
+        text-align: center;
     }
 }
