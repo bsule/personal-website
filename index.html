@@ -52,7 +52,9 @@
             <div class="row">
                 <div class="about-me-text">
                     <h1 data-aos="fade-in" data-aos-delay="200" data-aos-duration="500">About Me</h1>
+                    <p id="borderline-aboutme"></p>
                     <p data-aos="fade-in" data-aos-delay="300" data-aos-duration="500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis dignissimos dolor dolorem explicabo, itaque iusto, magni maxime minima obcaecati, officiis quam quisquam rem tempore ullam? Officia repellendus reprehenderit tempore?</p>
+                    <a href="#contact"><button class="btn btn-primary" id="btn-contactme">Contact Me!</button></a>
                 </div>
 
                 <div class="about-me-pics">
@@ -79,6 +81,7 @@
             <div class="row">
                 <div class="title-projects">
                     <h1>Projects</h1>
+                    <p id="borderline-projects"></p>
                 </div>
                 
                 <!-- ! workout tracker -->
@@ -86,10 +89,10 @@
                     <div class="col project-text">
                         <h4>Workout Tracker</h4>
                         <p class="paragraph-project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci aut cum cumque delectus eaque eius explicabo fuga nemo numquam pariatur perspiciatis placeat, praesentium quo quod repellendus, reprehenderit tempore, veniam?</p>
-                        <a href="https://github.com/bsule/Workout-Tracker" target="_blank"><button class="btn btn-outline-light" id="btn-learn-more">Learn More</button></a>
+                        <a href="https://github.com/bsule/Workout-Tracker" target="_blank"><button class="btn btn-primary" id="btn-learn-more">Learn More</button></a>
                     </div>
                     <div class="col project-pic-div">
-                        <div class="swiper">
+                        <div class="swiper" id="workout-tracker-slides">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="assets/img/workout-page-pics/workout-home-pic.png" alt="" height="360" width="500"></div>
                                 <div class="swiper-slide"><img src="assets/img/workout-page-pics/workout-selector-pic.png" alt="" height="360" width="500"></div>
@@ -128,7 +131,7 @@
                     <div class="col project-text">
                         <h4>JJ-Website</h4>
                         <p class="paragraph-project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda consectetur consequuntur deserunt doloremque eum id incidunt iure magnam maiores nam neque numquam placeat quas ratione reprehenderit saepe sed, voluptas!</p>
-                        <a href="https://github.com/bsule/JJ-Website.git" target="_blank"><button class="btn btn-outline-light" id="btn-learn-more">Learn More</button></a>
+                        <a href="https://github.com/bsule/JJ-Website.git" target="_blank"><button class="btn btn-primary" id="btn-learn-more">Learn More</button></a>
                     </div>
                 </div>
 
@@ -137,7 +140,7 @@
                     <div class="col project-text">
                         <h4>TicTacToe</h4>
                         <p class="paragraph-project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda consectetur consequuntur deserunt doloremque eum id incidunt iure magnam maiores nam neque numquam placeat quas ratione reprehenderit saepe sed, voluptas!</p>
-                        <a href="https://github.com/bsule/TicTacToeWebsite" target="_blank"><button class="btn btn-outline-light" id="btn-learn-more">Learn More</button></a>
+                        <a href="https://github.com/bsule/TicTacToeWebsite" target="_blank"><button class="btn btn-primary" id="btn-learn-more">Learn More</button></a>
                     </div>
 
                     <div class="col project-pic-div">
@@ -163,31 +166,18 @@
     <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-section-title">
-                    <h1>Send me a Message!</h1>
+                <div class="emails">
+                    <h3>Say Hello</h3>
+                    <a href="mailto:bilal.suleiman@gmail.com"><h6>bilal.suleiman@gmail.com</h6></a>
+                    <a href="mailto:bsule001@ucr.edu"><h6>bsule001@ucr.edu</h6></a>
                 </div>
-                <div class="contact-form"> <!-- https://html.form.guide/email-form/html-email-form/ -->
-                    <form action="contactform.php" method="POST">
-                        <label for="name" class="form-label">Name:</label>
-                        <input type="name" name="name" class="form-control" id="name-form" required>
 
-                        <label for="email" class="form-label" id="email-name">Email:</label>
-                        <input type="email" name="mail" class="form-control" id="email-form" required>
-
-                        <label for="textarea" class="form-label" id="message-name">Message:</label>
-                        <textarea id="text-form" name="message" class="form-control" required></textarea>
-
-                        <input type="submit" name="submit" class="btn btn-outline-light" id="send-form-btn" value="Send">
-                    </form>
-                </div>
                 <p id="border-line-contact"></p>
 
                 <div class="contact-buttons">
                     <p>&copy; Bilal Suleiman</p>
                 
                     <div class="left-side-contact">
-                        <a href="mailto: bilal.suleiman@gmail.com" target="_blank"><i class="fa-solid fa-envelope" id="email-btn"></i></a>
-
                         <a href="https://github.com/bsule" target="_blank"><i class="fab fa-brands fa-github" id="github-btn"></i></a>
 
                         <a href="https://www.linkedin.com/in/bilal-suleiman-a1aa741b9/" target="_blank"><i class="fab fa-linkedin-in" id="linkedin-btn"></i></a>

@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    background: #062b3b;
+    background: #e9ecee;
 }
 
 *{
@@ -23,7 +23,8 @@ body{
 }
 
 ::selection{
-    background: #a4a3a3;
+    background: rgb(66, 34, 180);
+    color: white;
 }
 
 /* ! navbar */
@@ -48,7 +49,7 @@ body{
 
 /* ! landing page */
 #hero{
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../img/backgroundpic.jpg") fixed center;
+    background: linear-gradient(rgba(66, 34, 180, 0.4),rgba(66, 34, 180, 0.4)), url("../img/backgroundpic.jpg") fixed center;
     min-height: 100vh;
     background-size: cover;
 }
@@ -96,7 +97,7 @@ body{
 
 /* ! about me */
 #about-me{
-    color: white;
+    color: black;
     min-height: 70vh;
 }
 
@@ -105,12 +106,26 @@ body{
     text-align: center;
 }
 
+#borderline-aboutme{
+    border: 2px solid rgb(53, 21, 172);
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
 .about-me-text p{
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+#btn-contactme{
+    margin-top: 10px;
+    width: 140px;
+    height: 40px;
 }
 
 .about-me-pics{
-    margin-top: 40px;
+    margin-top: 70px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -124,19 +139,26 @@ body{
 /* ! projects */
 #projects{
     min-height: 160vh;
+    color: black;
 }
 
 .title-projects{
-    color: white;
     text-align: center;
     margin-top: 40px;
 }
 
+#borderline-projects{
+    border: 2px solid rgb(53, 21, 172);
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
 .project-div{
-    color: white;
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .project-text{
@@ -149,6 +171,22 @@ body{
 .project-pic-div{
     display: flex;
     justify-content: center;
+}
+
+.btn-primary, .btn-primary:active{
+    background-color: rgb(53, 21, 172) !important;
+    position: relative;
+    top: 0;
+}
+
+.btn-primary:hover{
+    position: relative;
+    top:-2px;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
 }
 
 #btn-learn-more{
@@ -189,38 +227,33 @@ body{
 
 /* ! contact page */
 #contact{
-    min-height: 80vh;
+    min-height: 40vh;
     color: white;
+    background-color: rgb(53, 21, 172);
 }
 
-.contact-section-title{
+.main-text h1::selection, h5::selection, .emails h3::selection,h6::selection, a::selection, .contact-buttons p::selection, .left-side-contact::selection, .left-side-contact a::selection, i::selection{
+    background: white !important;
+    color: black !important;
+}
+
+.emails{
+    margin-top: 80px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
-.contact-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2vh;
+.emails h3{
+    margin-bottom: 20px;
 }
 
-#email-name, #message-name, #send-form-btn{
-    margin-top: 18px;
+.emails a{
+    color: white;
+    text-decoration: none;
 }
-
-.form-control{
-    width: 60vh;
-}
-
-#text-form{
-    min-height: 20vh;
-    resize: none;
-}
-
-#send-form-btn{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.emails a:hover{
+    color: #777676;
+    transition: .2s;
 }
 
 #border-line-contact{
@@ -238,12 +271,12 @@ body{
     margin-right: 10px;
 }
 
-#linkedin-btn, #github-btn, #email-btn{
+#linkedin-btn, #github-btn{
     color: white;
     font-size: 25px;
 }
 
-#linkedin-btn:hover, #github-btn:hover, #email-btn:hover{
+#linkedin-btn:hover, #github-btn:hover{
     color: #777676;
     transition: .2s;
     -webkit-transition: .2s;
