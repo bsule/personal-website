@@ -65,6 +65,19 @@ body{
     background-size: cover;
 }
 
+#hero:before{
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: linear-gradient(rgba(66, 34, 180, 0.4),rgba(66, 34, 180, 0.4)), url("../img/backgroundpic.jpg") fixed center;
+    background-size: cover;
+}
+
 .main-text{
     color: white;
     text-align: center;
