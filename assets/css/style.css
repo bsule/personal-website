@@ -342,13 +342,19 @@ body{
 @media screen and (max-width: 455px){
     .nav-link{
         font-size: 14px;
-        font-weight: bold;
+    }
+    .main-text h1{
+        font-weight: 600;
+    }
+    .main-text h5{
+        font-weight: 400;
     }
 }
 
 @media screen and (max-width: 380px){ 
     .main-text h1{
         font-size: 30px;
+        font-weight: bold;
     }
     .main-text h5{
         font-size: 12px;
