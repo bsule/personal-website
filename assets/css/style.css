@@ -60,6 +60,7 @@ body{
 /* ! landing page */
 #hero{
     background: linear-gradient(rgba(66, 34, 180, 0.4),rgba(66, 34, 180, 0.4)), url("../img/backgroundpic.jpg") fixed center;
+    background-position: center center;
     min-height: 100vh;
     background-size: cover;
 }
@@ -341,6 +342,7 @@ body{
 @media screen and (max-width: 455px){
     .nav-link{
         font-size: 14px;
+        font-weight: bold;
     }
 }
 
