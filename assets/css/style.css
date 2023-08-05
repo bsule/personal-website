@@ -351,6 +351,14 @@ body{
     }
 }
 
+@media screen and (max-width: 600px) {
+    #hero{
+        background: linear-gradient(rgba(66, 34, 180, 0.4),rgba(66, 34, 180, 0.4)), url("../img/backgroundpic.jpg") center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
 @media screen and (max-width: 380px){ 
     .main-text h1{
         font-size: 30px;
