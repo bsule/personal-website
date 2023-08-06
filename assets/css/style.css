@@ -221,8 +221,16 @@ body{
     margin-bottom: 35px;
 }
 
-#jj-website-div, #tictactoe-div{
+#workouttracker-div{
     margin-top: 100px;
+}
+
+#jj-website-div, #tictactoe-div{
+    margin-top: 300px;
+}
+
+#tictactoe-div{
+    margin-bottom: 300px;
 }
 
 .swiper{
@@ -359,6 +367,12 @@ body{
     }
 }
 
+@media screen and (max-width: 460px){
+    #btn-learn-more{
+        width: 40%;
+    }
+}
+
 @media screen and (max-width: 380px){ 
     .main-text h1{
         font-size: 30px;
@@ -410,5 +424,11 @@ body{
         flex-direction: column;
         align-self: center;
         text-align: center;
+    }
+    #tictactoe-div, #jj-website-div{
+        margin-top: 200px;
+    }
+    #tictactoe-div{
+        margin-bottom: 150px;
     }
 }
