@@ -1,10 +1,5 @@
 
 @font-face {
-    font-family: sourcesans3;
-    src: url("../fonts/SourceSans3-VariableFont_wght.ttf");
-}
-
-@font-face {
     font-family: RobotoMono;
     src: url("../fonts/RobotoMono-VariableFont_wght.ttf");
 }
@@ -135,6 +130,16 @@ body{
     width: 180px;
     height: 45px;
     font-weight: bold;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+#btn-contactme:hover{
+    position: relative;
+    transform: scale(.95);
 }
 
 .about-me-pics{
@@ -190,16 +195,21 @@ body{
     background-color: rgb(53, 21, 172) !important;
     position: relative;
     top: 0;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
 }
 
 .btn-primary:hover{
     position: relative;
-    top:-2px;
+    transform: scale(.95);
     transition: all .1s linear 0s;
-    -webkit-transition: all .1s linear 0s;
-    -moz-transition: all .1s linear 0s;
-    -ms-transition: all .1s linear 0s;
-    -o-transition: all .1s linear 0s;
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -o-transform: scale(.95);
 }
 
 #btn-learn-more{
@@ -269,14 +279,14 @@ body{
 }
 
 .emails h3 {
-    margin-top: 20px; /* Adjust the margin as needed */
-    margin-bottom: 10px; /* Adjust the margin as needed */
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .emails a{
     display: block;
-    margin: 10px auto; /* Adjust the margin as needed */
-    max-width: 250px; /* Set a maximum width for the links */
+    margin: 10px auto;
+    max-width: 250px;
     text-align: center;
 }
 
@@ -329,24 +339,6 @@ body{
 }
 
 
-/* @media screen and (max-width: 414px){
-
-    .navbar-nav{
-        margin-top: 100px;
-    }
-
-    .nav-link{
-        font-size: 100px;
-    }
-
-    .main-text h1{
-        font-size: 90px;
-    }
-    .main-text h2{
-        font-size: 60px;
-    }
-} */
-
 @media screen and (max-width: 455px){
     .nav-link{
         font-size: 14px;
@@ -367,9 +359,15 @@ body{
     }
 }
 
-@media screen and (max-width: 460px){
+@media screen and (max-width: 480px){
     #btn-learn-more{
         width: 40%;
+    }
+    figure img{
+        height: 270px;
+    }
+    .swiper{
+        height: 320px;
     }
 }
 
