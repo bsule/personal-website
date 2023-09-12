@@ -367,16 +367,24 @@ body{
     figure img{
         height: 270px;
     }
-    .swiper{
-        height: 300px;
+    .swiper-slide img{
         width: 400px;
+        height: 300px;
+    }
+    .swiper{
+        width: 400px;
+        height: 300px;
     }
 }
 
-@media screen and (max-width: 420px){
-    .swiper{
-        height: 270px;
+@media screen and (max-width: 430px){
+    .swiper-slide img{
         width: 360px;
+        height: 270px;
+    }
+    .swiper{
+        width: 360px;
+        height: 270px;
     }
 }
 
@@ -388,9 +396,13 @@ body{
     .main-text h5{
         font-size: 12px;
     }
-    .swiper{
-        height: 255px;
+    .swiper-slide img{
         width: 340px;
+        height: 255px;
+    }
+    .swiper{
+        width: 340px;
+        height: 255px;
     }
 }
 
