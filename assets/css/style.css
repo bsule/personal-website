@@ -368,17 +368,29 @@ body{
         height: 270px;
     }
     .swiper{
-        height: 320px;
+        height: 300px;
+        width: 400px;
     }
 }
 
-@media screen and (max-width: 380px){ 
+@media screen and (max-width: 420px){
+    .swiper{
+        height: 270px;
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 385px){ 
     .main-text h1{
         font-size: 30px;
         font-weight: bold;
     }
     .main-text h5{
         font-size: 12px;
+    }
+    .swiper{
+        height: 255px;
+        width: 340px;
     }
 }
 
