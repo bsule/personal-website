@@ -122,8 +122,8 @@ body{
     margin-top: 0;
 }
 
-.about-me-text p{
-    margin-top: 30px;
+#about-me-para{
+    margin-top: 22px;
 }
 
 #btn-contactme{
