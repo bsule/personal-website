@@ -177,7 +177,6 @@ body{
 .project-div{
     display: flex;
     flex-direction: row;
-    margin-top: 60px;
 }
 
 .project-text{
@@ -197,20 +196,12 @@ body{
     position: relative;
     top: 0;
     transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    -ms-transition: .2s;
-    -o-transition: .2s;
 }
 
 .btn-primary:hover{
     position: relative;
     transform: scale(.95);
     transition: all .1s linear 0s;
-    -webkit-transform: scale(.95);
-    -moz-transform: scale(.95);
-    -ms-transform: scale(.95);
-    -o-transform: scale(.95);
 }
 
 #btn-learn-more{
@@ -232,16 +223,17 @@ body{
     margin-bottom: 35px;
 }
 
-#workouttracker-div{
+#ecommerce-div{
     margin-top: 100px;
 }
 
-#jj-website-div, #tictactoe-div{
-    margin-top: 300px;
+#workouttracker-div{
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
-#tictactoe-div{
-    margin-bottom: 300px;
+#jj-website-div{
+    margin-bottom: 250px;
 }
 
 .swiper{
@@ -426,7 +418,7 @@ body{
         flex-direction: column;
     }
 
-    #jj-website-div{
+    #workouttracker-div{
         flex-direction: column-reverse;
     }
 
@@ -434,7 +426,7 @@ body{
         margin-bottom: 100px;
     }
 
-    #workouttracker-div, #jj-website-div{
+    #ecommerce-div, #workouttracker-div, #jj-website-div{
         margin-bottom: 40px;
     }
 }
@@ -448,10 +440,9 @@ body{
         align-self: center;
         text-align: center;
     }
-    #tictactoe-div, #jj-website-div{
+
+    #jj-website-div{
         margin-top: 200px;
-    }
-    #tictactoe-div{
         margin-bottom: 150px;
     }
 }
